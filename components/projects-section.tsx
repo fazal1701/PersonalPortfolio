@@ -17,7 +17,7 @@ const projects = [
   {
     id: 2,
     title: "AI Lifestyle & Aesthetic Recommender",
-    description: "Mobile-first swipe-based platform for capturing individual fashion and interior design preferences. Features computer vision models for visual embeddings and style detection, recommendation logic with scikit-learn and Hugging Face Transformers to unify fashion, furniture, and lifestyle aesthetics. Integrated ARKit/ARCore for real-time outfit try-ons and furniture visualization, incorporating cultural style signals from TV, Instagram, and TikTok aesthetics with direct links to fashion retailers for seamless product discovery.",
+    description: "Mobile-first swipe-based platform for capturing individual fashion and interior design preferences. Features computer vision models for visual embeddings and style detection, recommendation logic with scikit-learn and Hugging Face Transformers to unify fashion, furniture, and lifestyle aesthetics. Integrated ARKit/ARCore for real-time outfit try-ons and furniture visualization, incorporating cultural style signals from TV, Instagram, and TikTok aesthetics with direct links to fashion retailers for seamless product discovery, enabling personalized shopping journeys and highly engaging, interactive consumer experiences across digital and physical environments.",
     image: "/ar-interior-design-app.png",
     demoUrl: "#",
     presentationUrl: "https://docs.google.com/presentation/d/1m5nX3WofrrNjO45eMPBSdiH-TOyneq6wHjKEBYOqMCE/edit?usp=sharing",
