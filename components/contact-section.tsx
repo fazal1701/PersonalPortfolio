@@ -119,22 +119,19 @@ export default function ContactSection() {
                 <Input
                   name="name"
                   type="text"
-                  placeholder="Your Name"
                   required
                   className="h-12 text-lg border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400"
                 />
                 <Input
                   name="email"
                   type="email"
-                  placeholder="your.email@example.com"
                   required
                   className="h-12 text-lg border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400"
                 />
                 <Textarea
                   name="message"
-                  placeholder="Tell me about your project, challenges, or ideas..."
-                  className="h-32 text-lg border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 resize-none"
                   required
+                  className="h-32 text-lg border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 resize-none"
                 />
                 <Button
                   type="submit"
