@@ -70,7 +70,7 @@ export function ProjectsSection() {
                 <CardTitle className="text-xl md:text-2xl">{project.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex flex-col flex-1">
-                <p className="text-base md:text-lg text-muted-foreground mb-4 leading-relaxed line-clamp-5 min-h-[7.5rem]">{project.description}</p>
+                <p className="text-base md:text-lg text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
                 <div className="mt-auto flex flex-col gap-2">
                   <Button variant="outline" size="sm" className="w-full" asChild disabled={!project.demoUrl || project.demoUrl === "#"}>
                     <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
