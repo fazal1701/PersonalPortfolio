@@ -11,8 +11,6 @@ const projects = [
     title: "Full-Stack Health Optimization App",
     description: "AI-driven dashboard that aggregates wearable, clinical, and lifestyle data to forecast and prevent risks across cardiovascular, cancer, neurodegenerative, and metabolic diseases. Includes interactive dashboard with percentile benchmarks, risk profiles, and evidence-based recommendations with HIPAA-aligned privacy controls.",
     image: "/Healthoptimization.jpeg",
-    demoUrl: "https://vitaledge-health-app.vercel.app/",
-    githubUrl: "https://github.com/yourusername/vitaledge-health-app",
     presentationUrl: "https://docs.google.com/presentation/d/1-health-app-demo", // example
   },
   {
@@ -20,8 +18,6 @@ const projects = [
     title: "AI Lifestyle & Aesthetic Recommender",
     description: "Mobile-first swipe-based platform for capturing individual fashion and interior design preferences. Features computer vision models for visual embeddings and style detection, recommendation logic with scikit-learn and Hugging Face Transformers to unify fashion, furniture, and lifestyle aesthetics. Integrated ARKit/ARCore for real-time outfit try-ons and furniture visualization, incorporating cultural style signals from TV, Instagram, and TikTok aesthetics with direct links to fashion retailers for seamless product discovery.",
     image: "/ar-interior-design-app.png",
-    demoUrl: "https://stylesync-ai-recommender.vercel.app/",
-    githubUrl: "https://github.com/yourusername/stylesync-ai-recommender",
     presentationUrl: "https://docs.google.com/presentation/d/2-style-sync-demo", // example
   },
   {
@@ -29,8 +25,6 @@ const projects = [
     title: "AI Corporate Training Assistant",
     description: "AI-powered corporate training platform designed to help employees learn faster and work smarter. Features an intelligent chatbot for real-time question answering with seamless escalation to human mentors for complex issues. Includes skill tracking dashboards, gamified learning features to improve engagement, and performance forecasting to personalize each employee's learning path. Reduces onboarding costs and accelerates overall skill acquisition across teams.",
     image: "/AICorporateTrainingAssistant.jpeg",
-    demoUrl: "https://ai-corporate-training.vercel.app/",
-    githubUrl: "https://github.com/yourusername/ai-corporate-training",
     presentationUrl: "https://docs.google.com/presentation/d/3-corp-training-demo", // example
   },
   {
@@ -38,8 +32,6 @@ const projects = [
     title: "Flashcard AI",
     description: "Advanced flashcard system with spaced repetition algorithms, adaptive learning mechanisms, and comprehensive progress analytics for optimized knowledge retention. Features AI-generated content, personalized study schedules, and performance tracking to enhance learning efficiency.",
     image: "/AIflashcard.png",
-    demoUrl: "https://flashcard-ai-study.vercel.app/",
-    githubUrl: "https://github.com/yourusername/flashcard-ai-study",
     presentationUrl: "https://docs.google.com/presentation/d/4-flashcard-demo", // example
   },
   {
@@ -47,17 +39,6 @@ const projects = [
     title: "Clinical Trial Intelligence Platform",
     description: "AI platform for trial operations that ingests ClinicalTrials.gov, PubMed, and synthetic EHR to forecast enrollment, flag dropout risk, and surface safety signals. NLP (BioBERT) parses inclusion/exclusion criteria into structured cohorts; FastAPI services power a React/TS app with what-if scenarios, site performance, and P10/50/90 forecast bands. HIPAA/GDPR-aligned with RBAC, audit logs, and encrypted storage.",
     image: "/academicresearch.png",
-    demoUrl: "#",
-    githubUrl: "#",
-    presentationUrl: "#",
-  },
-  {
-    id: 6,
-    title: "B2B E-Commerce SaaS Platform",
-    description: "Developed a B2B e-commerce platform enabling suppliers and dealers to manage inventory, process orders, and maintain digital product catalogs. Built React front-end components with reusable patterns and responsive design for supplier and customer workflows. Implemented Node.js + GraphQL APIs to power order management, authentication, and catalog search. Integrated third-party APIs (payments, logistics, CRM) and leveraged Firebase services for authentication and notifications. Deployed in a cloud-native environment (AWS + Docker) with CI/CD pipelines, ensuring scalable and reliable releases.",
-    image: "/Adobecommerce.png",
-    demoUrl: "#",
-    githubUrl: "#",
     presentationUrl: "#",
   },
 ]
@@ -85,18 +66,6 @@ export function ProjectsSection() {
               </CardHeader>
               <CardContent>
                 <p className="text-base md:text-lg text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
-                <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
-                  <Button variant="outline" size="sm" className="w-full" asChild>
-                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                      Demo
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="sm" className="w-full" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      GitHub
-                    </a>
-                  </Button>
-                </div>
                 <Button variant="secondary" size="sm" className="w-full mt-2" asChild disabled={!project.presentationUrl || project.presentationUrl === "#"}>
                   <a href={project.presentationUrl} target="_blank" rel="noopener noreferrer">
                     Presentation
