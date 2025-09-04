@@ -34,8 +34,6 @@ const skillCategories: SkillCategory[] = [
       { name: "MongoDB", image: undefined },
       { name: "Git", image: undefined },
       { name: "Jira", image: undefined },
-      { name: "Prometheus", image: undefined },
-      { name: "Grafana", image: undefined },
     ],
   },
   {
