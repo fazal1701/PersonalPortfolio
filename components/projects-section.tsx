@@ -9,7 +9,7 @@ const projects = [
   {
     id: 1,
     title: "Full-Stack Health Optimization App",
-    description: "AI-driven dashboard that aggregates wearable, clinical, and lifestyle data to forecast and prevent risks across cardiovascular, cancer, neurodegenerative, and metabolic diseases. Includes interactive dashboard with percentile benchmarks, risk profiles, and evidence-based recommendations with HIPAA-aligned privacy controls.",
+    description: "AI-driven platform that consolidates wearable, clinical, and lifestyle data into a unified dashboard for predictive health insights. Employs machine learning models trained on longitudinal datasets to forecast risks across cardiovascular, cancer, neurodegenerative, and metabolic conditions. Features interactive visualizations with percentile benchmarks, individualized risk profiles, and SHAP-driven explainability to surface transparent recommendations. Integrates evidence-based guidelines and precision medicine frameworks to suggest preventive interventions. Incorporates HIPAA-aligned privacy, encrypted storage, and role-based access to ensure secure, compliant data management while empowering patients and clinicians with actionable health intelligence.",
     image: "/Healthoptimization.jpeg",
     demoUrl: "https://full-stack-health-optimization.vercel.app/",
     presentationUrl: "https://docs.google.com/presentation/d/186vJg0aAyJZcWoqR_wIBX7s4CvSfFRl75-vJ0cXAvc8/edit?usp=sharing",
