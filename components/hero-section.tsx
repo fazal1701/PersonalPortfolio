@@ -13,8 +13,8 @@ export default function HeroSection() {
             AI/ML & Full-Stack
           </span>
         </h1>
-        <p className="mt-10 text-3xl md:text-4xl font-semibold text-black dark:text-white">
-          I’m Fazal Bhatti, early in my career yet deeply focused on the bigger picture of how artificial intelligence can be applied across industries. My work centers on planning, researching, and prototyping intelligent systems that unite data-driven models, cloud architecture, and real-world problem solving. With each project, I treat development as an opportunity to explore emerging methods and translate research concepts into working prototypes. Over time, I aim to grow into an AI Solutions Architect who bridges research and engineering to drive innovation at scale.
+        <p className="mt-8 text-lg md:text-xl font-medium text-black dark:text-white max-w-2xl mx-auto">
+          I’m Fazal Bhatti, passionate about applying AI to real-world problems. I focus on planning, researching, and prototyping intelligent systems that connect data, cloud, and practical solutions. My goal: bridge research and engineering as an AI Solutions Architect to drive innovation at scale.
         </p>
       </div>
     </section>
