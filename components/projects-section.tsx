@@ -29,7 +29,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Flashcard AI",
+    title: "Advanced AI Education System",
     description: "An AI-driven learning companion that fuses spaced repetition with generative models to create mnemonics, analogies, quizzes, and multi-layered explanations guiding students through techniques like the method of loci and Feynman learning so they not only memorize but actively reconstruct knowledge, while progress analytics adapt the system into a personalized tutor that evolves with each learner.",
     image: "/AIflashcard.png",
     presentationUrl: "https://docs.google.com/presentation/d/4-flashcard-demo", // example
