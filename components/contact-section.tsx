@@ -36,41 +36,7 @@ export default function ContactSection() {
     <section className="relative overflow-hidden bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-6xl px-4 py-20 md:py-24">
         <header className="text-center mb-16"></header>
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Left card: quick contact + links */}
-          {/* Removed left card with email/social/resume links */}
-          {/* Right card: contact form only */}
-          <Card className="border-gray-200 dark:border-gray-700 shadow-sm col-span-2">
-            <CardHeader className="pb-4"></CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <Input
-                  name="name"
-                  type="text"
-                  required
-                  className="h-12 text-lg border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400"
-                />
-                <Input
-                  name="email"
-                  type="email"
-                  required
-                  className="h-12 text-lg border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400"
-                />
-                <Textarea
-                  name="message"
-                  required
-                  className="h-32 text-lg border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 resize-none"
-                />
-                <Button
-                  type="submit"
-                  className="w-full h-14 text-lg font-semibold bg-gray-800 hover:bg-gray-900 text-white transition-colors duration-200"
-                >
-                  Send
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-        </div>
+        {/* Removed contact form and all content */}
       </div>
     </section>
   );
