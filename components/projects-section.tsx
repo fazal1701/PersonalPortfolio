@@ -19,6 +19,7 @@ const projects = [
     title: "AI Lifestyle & Aesthetic Recommender",
     description: "Mobile-first swipe-based platform for capturing individual fashion and interior design preferences. Features computer vision models for visual embeddings and style detection, recommendation logic with scikit-learn and Hugging Face Transformers to unify fashion, furniture, and lifestyle aesthetics. Integrated ARKit/ARCore for real-time outfit try-ons and furniture visualization, incorporating cultural style signals from TV, Instagram, and TikTok aesthetics with direct links to fashion retailers for seamless product discovery.",
     image: "/ar-interior-design-app.png",
+    demoUrl: "#",
     presentationUrl: "https://docs.google.com/presentation/d/1m5nX3WofrrNjO45eMPBSdiH-TOyneq6wHjKEBYOqMCE/edit?usp=sharing",
   },
   {
@@ -26,20 +27,23 @@ const projects = [
     title: "AI Corporate Training Assistant",
     description: "AI-powered corporate training platform designed to help employees learn faster and work smarter. Features an intelligent chatbot for real-time question answering with seamless escalation to human mentors for complex issues. Includes skill tracking dashboards, gamified learning features to improve engagement, and performance forecasting to personalize each employee's learning path. Reduces onboarding costs and accelerates overall skill acquisition across teams.",
     image: "/AICorporateTrainingAssistant.jpeg",
-    presentationUrl: "https://docs.google.com/presentation/d/3-corp-training-demo", // example
+    demoUrl: "#",
+    presentationUrl: "#",
   },
   {
     id: 4,
     title: "Advanced AI Education System",
     description: "An AI-driven learning companion that fuses spaced repetition with generative models to create mnemonics, analogies, quizzes, and multi-layered explanations guiding students through techniques like the method of loci and Feynman learning so they not only memorize but actively reconstruct knowledge, while progress analytics adapt the system into a personalized tutor that evolves with each learner.",
     image: "/AIflashcard.png",
-    presentationUrl: "https://docs.google.com/presentation/d/4-flashcard-demo", // example
+    demoUrl: "#",
+    presentationUrl: "#",
   },
   {
     id: 5,
     title: "Clinical Trial Intelligence Platform",
     description: "AI platform for trial operations that ingests ClinicalTrials.gov, PubMed, and synthetic EHR to forecast enrollment, flag dropout risk, and surface safety signals. NLP (BioBERT) parses inclusion/exclusion criteria into structured cohorts; FastAPI services power a React/TS app with what-if scenarios, site performance, and P10/50/90 forecast bands. HIPAA/GDPR-aligned with RBAC, audit logs, and encrypted storage.",
     image: "/academicresearch.png",
+    demoUrl: "#",
     presentationUrl: "#",
   },
 ]
@@ -54,31 +58,31 @@ export function ProjectsSection() {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
-            <Card key={project.id} className="overflow-hidden hover:shadow-2xl transition-all border-2 border-transparent hover:border-blue-400 bg-white/90 dark:bg-gray-900/80">
+            <Card key={project.id} className="overflow-hidden flex flex-col h-full hover:shadow-2xl transition-all border-2 border-transparent hover:border-blue-400 bg-white/90 dark:bg-gray-900/80">
               <div className="aspect-video relative overflow-hidden">
-                    <img
+                <img
                   src={project.image}
-                      alt={project.title}
+                  alt={project.title}
                   className="object-cover w-full h-full"
                 />
-                  </div>
-                  <CardHeader>
+              </div>
+              <CardHeader>
                 <CardTitle className="text-xl md:text-2xl">{project.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-base md:text-lg text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
-                {project.demoUrl && (
-                  <Button variant="outline" size="sm" className="w-full mb-2" asChild>
+              <CardContent className="flex flex-col flex-1">
+                <p className="text-base md:text-lg text-muted-foreground mb-4 leading-relaxed line-clamp-5 min-h-[7.5rem]">{project.description}</p>
+                <div className="mt-auto flex flex-col gap-2">
+                  <Button variant="outline" size="sm" className="w-full" asChild disabled={!project.demoUrl || project.demoUrl === "#"}>
                     <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                       Demo
                     </a>
                   </Button>
-                )}
-                <Button variant="secondary" size="sm" className="w-full" asChild disabled={!project.presentationUrl}>
-                  <a href={project.presentationUrl} target="_blank" rel="noopener noreferrer">
-                    Presentation
-                  </a>
-                </Button>
+                  <Button variant="secondary" size="sm" className="w-full" asChild disabled={!project.presentationUrl || project.presentationUrl === "#"}>
+                    <a href={project.presentationUrl} target="_blank" rel="noopener noreferrer">
+                      Presentation
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}
