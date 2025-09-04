@@ -11,7 +11,8 @@ const projects = [
     title: "Full-Stack Health Optimization App",
     description: "AI-driven dashboard that aggregates wearable, clinical, and lifestyle data to forecast and prevent risks across cardiovascular, cancer, neurodegenerative, and metabolic diseases. Includes interactive dashboard with percentile benchmarks, risk profiles, and evidence-based recommendations with HIPAA-aligned privacy controls.",
     image: "/Healthoptimization.jpeg",
-    presentationUrl: "https://docs.google.com/presentation/d/1-health-app-demo", // example
+    demoUrl: "https://full-stack-health-optimization.vercel.app/",
+    presentationUrl: "https://docs.google.com/presentation/d/186vJg0aAyJZcWoqR_wIBX7s4CvSfFRl75-vJ0cXAvc8/edit?usp=sharing",
   },
   {
     id: 2,
@@ -66,7 +67,14 @@ export function ProjectsSection() {
               </CardHeader>
               <CardContent>
                 <p className="text-base md:text-lg text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
-                <Button variant="secondary" size="sm" className="w-full mt-2" asChild disabled={!project.presentationUrl || project.presentationUrl === "#"}>
+                {project.demoUrl && (
+                  <Button variant="outline" size="sm" className="w-full mb-2" asChild>
+                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                      Demo
+                    </a>
+                  </Button>
+                )}
+                <Button variant="secondary" size="sm" className="w-full" asChild disabled={!project.presentationUrl}>
                   <a href={project.presentationUrl} target="_blank" rel="noopener noreferrer">
                     Presentation
                   </a>
