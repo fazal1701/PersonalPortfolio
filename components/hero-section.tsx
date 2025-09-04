@@ -14,7 +14,7 @@ export default function HeroSection() {
           </span>
         </h1>
         <p className="mt-8 text-lg md:text-xl font-medium text-black dark:text-white max-w-2xl mx-auto">
-          I’m Fazal Bhatti, passionate about applying AI to real-world problems. I focus on planning, researching, and prototyping intelligent systems that connect data, cloud, and practical solutions. My goal: bridge research and engineering as an AI Solutions Architect to drive innovation at scale.
+          I am Fazal Bhatti, passionate about applying AI to real-world problems. I focus on planning, researching, and prototyping intelligent systems that connect data, cloud, and practical solutions. My goal is to bridge research and engineering as an AI Solutions Architect to drive innovation at scale.
         </p>
       </div>
     </section>
