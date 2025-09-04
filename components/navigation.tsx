@@ -32,7 +32,7 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="font-serif font-bold text-xl text-primary">Portfolio</div>
+          {/* Remove the Portfolio brand/title from the top left */}
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
