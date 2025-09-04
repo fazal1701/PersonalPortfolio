@@ -66,8 +66,20 @@ export function Navigation() {
             >
               Contact
             </button>
-            <Button size="sm" className="gap-2">
-              Resume
+            <Button size="sm" className="gap-2" asChild>
+              <a href="/FazalBhattiResume.pdf" target="_blank" rel="noopener noreferrer">
+                Resume
+              </a>
+            </Button>
+            <Button size="sm" className="gap-2" asChild>
+              <a href="https://github.com/fazal1701" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </Button>
+            <Button size="sm" className="gap-2" asChild>
+              <a href="https://www.linkedin.com/in/fazal-bhatti" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
             </Button>
           </div>
 
@@ -114,8 +126,20 @@ export function Navigation() {
                 Contact
               </button>
               <div className="px-3 py-2">
-                <Button size="sm" className="gap-2 w-full">
-                  Resume
+                <Button size="sm" className="gap-2 w-full" asChild>
+                  <a href="/FazalBhattiResume.pdf" target="_blank" rel="noopener noreferrer">
+                    Resume
+                  </a>
+                </Button>
+                <Button size="sm" className="gap-2 w-full" asChild>
+                  <a href="https://github.com/fazal1701" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                  </a>
+                </Button>
+                <Button size="sm" className="gap-2 w-full" asChild>
+                  <a href="https://www.linkedin.com/in/fazal-bhatti" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                  </a>
                 </Button>
               </div>
             </div>

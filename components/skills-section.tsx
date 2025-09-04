@@ -31,6 +31,7 @@ const skillCategories: SkillCategory[] = [
       { name: "Azure", image: undefined },
       { name: "Docker", image: undefined },
       { name: "Kubernetes", image: undefined },
+      { name: "MongoDB", image: undefined },
       { name: "Git", image: undefined },
       { name: "Jira", image: undefined },
       { name: "Prometheus", image: undefined },

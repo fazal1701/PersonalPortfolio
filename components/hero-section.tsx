@@ -14,7 +14,7 @@ export default function HeroSection() {
           </span>
         </h1>
         <p className="mt-10 text-3xl md:text-4xl font-semibold text-black dark:text-white">
-          I build production-ready AI features, scalable backends, and clean UIs with measurable impact.
+          I’m Fazal Bhatti, early in my career yet deeply focused on the bigger picture of how artificial intelligence can be applied across industries. My work centers on planning, researching, and prototyping intelligent systems that unite data-driven models, cloud architecture, and real-world problem solving. With each project, I treat development as an opportunity to explore emerging methods and translate research concepts into working prototypes. Over time, I aim to grow into an AI Solutions Architect who bridges research and engineering to drive innovation at scale.
         </p>
       </div>
     </section>
