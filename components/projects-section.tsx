@@ -28,7 +28,7 @@ const projects = [
     description: "AI-powered corporate training platform designed to help employees learn faster and work smarter. Features an intelligent chatbot for real-time question answering with seamless escalation to human mentors for complex issues. Includes skill tracking dashboards, gamified learning features to improve engagement, and performance forecasting to personalize each employee's learning path. Reduces onboarding costs and accelerates overall skill acquisition across teams.",
     image: "/AICorporateTrainingAssistant.jpeg",
     demoUrl: "#",
-    presentationUrl: "#",
+    presentationUrl: "https://docs.google.com/presentation/d/1RjFAPLZFylMeJFxwiexUPR2MELVc0oVreMD7LLB4wEk/edit?slide=id.g3885eef22a6_0_123#slide=id.g3885eef22a6_0_123",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const projects = [
     description: "AI platform for trial operations that ingests ClinicalTrials.gov, PubMed, and synthetic EHR to forecast enrollment, flag dropout risk, and surface safety signals. NLP (BioBERT) parses inclusion/exclusion criteria into structured cohorts; FastAPI services power a React/TS app with what-if scenarios, site performance, and P10/50/90 forecast bands. HIPAA/GDPR-aligned with RBAC, audit logs, and encrypted storage.",
     image: "/academicresearch.png",
     demoUrl: "#",
-    presentationUrl: "#",
+    presentationUrl: "https://docs.google.com/presentation/d/10O_LBNxuUX-I95Qy4a43qw9X0akCv1xMDwT7db-22Lg/edit?slide=id.g3885e53cf0d_0_1#slide=id.g3885e53cf0d_0_1",
   },
 ]
 
@@ -72,11 +72,6 @@ export function ProjectsSection() {
               <CardContent className="flex flex-col flex-1">
                 <p className="text-base md:text-lg text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
                 <div className="mt-auto flex flex-col gap-2">
-                  <Button variant="outline" size="sm" className="w-full" asChild disabled={!project.demoUrl || project.demoUrl === "#"}>
-                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                      Demo
-                    </a>
-                  </Button>
                   <Button variant="secondary" size="sm" className="w-full" asChild disabled={!project.presentationUrl || project.presentationUrl === "#"}>
                     <a href={project.presentationUrl} target="_blank" rel="noopener noreferrer">
                       Presentation
