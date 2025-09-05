@@ -35,8 +35,11 @@ export default function ContactSection() {
   return (
     <section className="relative overflow-hidden bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-6xl px-4 py-20 md:py-24">
-        <header className="text-center mb-16"></header>
-        {/* Removed contact form and all content */}
+        <div className="flex flex-col items-center gap-6">
+          <a href="https://www.linkedin.com/in/fazal-bhatti" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 w-64 text-center">LinkedIn</a>
+          <a href="https://github.com/fazal1701" target="_blank" rel="noopener noreferrer" className="bg-gray-800 hover:bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 w-64 text-center">GitHub</a>
+          <a href="/FazalBhattiResume.pdf" target="_blank" rel="noopener noreferrer" className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 w-64 text-center">Resume</a>
+        </div>
       </div>
     </section>
   );
