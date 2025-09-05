@@ -36,7 +36,7 @@ const projects = [
     description: "An AI-driven learning companion that fuses spaced repetition with generative models to create mnemonics, analogies, quizzes, and multi-layered explanations guiding students through techniques like the method of loci and Feynman learning so they not only memorize but actively reconstruct knowledge, while progress analytics adapt the system into a personalized tutor that evolves with each learner.",
     image: "/AIflashcard.png",
     demoUrl: "https://advanced-ai-education-system.vercel.app/",
-    presentationUrl: "#",
+    presentationUrl: "https://docs.google.com/presentation/d/1h15hSnV2Ed2Z3PEn1H9kUdpCVD_ipSvmzor1NVwVEv0/edit?usp=sharing",
   },
   {
     id: 5,
