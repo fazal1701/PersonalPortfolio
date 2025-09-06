@@ -51,7 +51,7 @@ export default function ContactSection() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <Card className="hover:shadow-xl transition-shadow border-2 border-transparent hover:border-black">
             <CardHeader className="flex flex-row items-center gap-3">
-              <div className="p-2.5 rounded-lg bg-black text-white">
+              <div className="p-2.5 rounded-lg bg-blue-600 text-white">
                 <Linkedin size={22} />
               </div>
               <CardTitle className="text-xl">LinkedIn</CardTitle>
@@ -60,7 +60,7 @@ export default function ContactSection() {
               <p className="text-sm text-gray-600 dark:text-gray-300">
                 Connect professionally, view experience, and message me directly.
               </p>
-              <Button asChild className="w-full bg-black text-white hover:bg-black/90">
+              <Button asChild className="w-full bg-blue-600 text-white hover:bg-blue-700">
                 <a href={LINKEDIN} target="_blank" rel="noopener noreferrer">
                   View LinkedIn
                   <ExternalLink className="ml-2 h-4 w-4" />
