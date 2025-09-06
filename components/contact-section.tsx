@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import { Mail, Github, Linkedin, Download, Send, Copy, CheckCircle2 } from "lucide-react";
+import { Mail, Github, Linkedin, Download, Send, Copy, CheckCircle2, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -11,14 +11,18 @@ export default function ContactSection() {
   const [copied, setCopied] = useState(false);
   const EMAIL = "fazalbhatti522@gmail.com";
   const GITHUB = "https://github.com/fazal1701";
-  const LINKEDIN = "https://www.linkedin.com/in/fazalbh";
-  const RESUME = "/Fazal_Bhatti_Resume.pdf";
+  const LINKEDIN = "https://www.linkedin.com/in/fazal-bhatti/";
+  const RESUME = "/FazalBhattiResumeInnovateDynamic.pdf";
 
-  function copyEmail() {
-    navigator.clipboard.writeText(EMAIL).then(() => {
+  async function copyEmail() {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
-    });
+    } catch (error) {
+      console.error("Failed to copy email to clipboard", error);
+      setCopied(false);
+    }
   }
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -35,11 +39,77 @@ export default function ContactSection() {
   return (
     <section className="relative overflow-hidden bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-6xl px-4 py-20 md:py-24">
-        <div className="flex flex-col items-center gap-6">
-          <a href="https://www.linkedin.com/in/fazal-bhatti" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 w-64 text-center">LinkedIn</a>
-          <a href="https://github.com/fazal1701" target="_blank" rel="noopener noreferrer" className="bg-gray-800 hover:bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 w-64 text-center">GitHub</a>
-          <a href="/FazalBhattiResume.pdf" target="_blank" rel="noopener noreferrer" className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 w-64 text-center">Resume</a>
+        <div className="mx-auto max-w-2xl text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-700 via-purple-600 to-blue-400">
+            Let’s Connect
+          </h2>
+          <p className="mt-3 text-gray-600 dark:text-gray-300">
+            Reach out on LinkedIn, explore my GitHub, or grab my resume.
+          </p>
         </div>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <Card className="hover:shadow-xl transition-shadow border-2 border-transparent hover:border-black">
+            <CardHeader className="flex flex-row items-center gap-3">
+              <div className="p-2.5 rounded-lg bg-black text-white">
+                <Linkedin size={22} />
+              </div>
+              <CardTitle className="text-xl">LinkedIn</CardTitle>
+            </CardHeader>
+            <CardContent className="flex flex-col gap-4">
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Connect professionally, view experience, and message me directly.
+              </p>
+              <Button asChild className="w-full bg-black text-white hover:bg-black/90">
+                <a href={LINKEDIN} target="_blank" rel="noopener noreferrer">
+                  View LinkedIn
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-xl transition-shadow border-2 border-transparent hover:border-black">
+            <CardHeader className="flex flex-row items-center gap-3">
+              <div className="p-2.5 rounded-lg bg-gray-900 text-white">
+                <Github size={22} />
+              </div>
+              <CardTitle className="text-xl">GitHub</CardTitle>
+            </CardHeader>
+            <CardContent className="flex flex-col gap-4">
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Explore code, projects, and experiments across AI and full‑stack.
+              </p>
+              <Button asChild className="w-full bg-black text-white hover:bg-black/90">
+                <a href={GITHUB} target="_blank" rel="noopener noreferrer">
+                  Visit GitHub
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-xl transition-shadow border-2 border-transparent hover:border-black">
+            <CardHeader className="flex flex-row items-center gap-3">
+              <div className="p-2.5 rounded-lg bg-black text-white">
+                <Download size={22} />
+              </div>
+              <CardTitle className="text-xl">Resume</CardTitle>
+            </CardHeader>
+            <CardContent className="flex flex-col gap-4">
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Up‑to‑date resume with experience, skills, and selected work.
+              </p>
+              <Button asChild className="w-full bg-black text-white hover:bg-black/90">
+                <a href={RESUME} target="_blank" rel="noopener noreferrer">
+                  View / Download Resume
+                  <Download className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+
       </div>
     </section>
   );

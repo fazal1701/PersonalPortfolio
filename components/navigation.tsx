@@ -35,7 +35,7 @@ export function Navigation() {
           {/* Remove the Portfolio brand/title from the top left */}
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 ml-auto">
             <button
               onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-primary transition-colors"
