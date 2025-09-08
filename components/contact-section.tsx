@@ -12,7 +12,7 @@ export default function ContactSection() {
   const EMAIL = "fazalbhatti522@gmail.com";
   const GITHUB = "https://github.com/fazal1701";
   const LINKEDIN = "https://www.linkedin.com/in/fazal-bhatti/";
-  const RESUME = "/FazalBhattiResumeInnovateDynamic.pdf";
+  const RESUME = "/FazalBhattiResume.pdf";
 
   async function copyEmail() {
     try {
