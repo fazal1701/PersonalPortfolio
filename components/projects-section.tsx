@@ -13,13 +13,6 @@ const projects = [
     demoUrl: "https://full-stack-health-optimization.vercel.app/",
   },
   {
-    id: 2,
-    title: "AI Lifestyle & Aesthetic Recommender",
-    description: "Mobile-first swipe-based platform for capturing individual fashion and interior design preferences. Features computer vision models for visual embeddings and style detection, recommendation logic with scikit-learn and Hugging Face Transformers to unify fashion, furniture, and lifestyle aesthetics. Integrated ARKit/ARCore for real-time outfit try-ons and furniture visualization, incorporating cultural style signals from TV, Instagram, and TikTok aesthetics with direct links to fashion retailers for seamless product discovery, enabling personalized shopping journeys and highly engaging, interactive consumer experiences across digital and physical environments.",
-    image: "/ar-interior-design-app.png",
-    demoUrl: "#",
-  },
-  {
     id: 3,
     title: "AI Corporate Training Assistant",
     description: "AI-powered corporate training platform designed to help employees learn faster and work smarter. Features an intelligent chatbot for real-time question answering with seamless escalation to human mentors for complex issues. Includes skill tracking dashboards, gamified learning features to improve engagement, and performance forecasting to personalize each employee's learning path. Reduces onboarding costs and accelerates overall skill acquisition across teams.",
